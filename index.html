@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+    <meta charset="utf-8"/>
+    <title>MChiq</title>
+
+    <!-- Main CSS
+    ======================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--GOOGLE FONTS
+    ===========================================================-->
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+    <!--MODAL IMPORTS
+      =========================================================-->
+      <link rel="stylesheet" type="text/css" href="css/modal.css">
+      <script type="text/javascript" href="js/modal.js" ></script>
+
+
+    <!--PAGE RESPONSIVNES META
+      ====================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<!--Navigation bar
+=============================================================-->
+<body>
+     <div class="container">      
+          <div class="nav">
+              <nav>
+                <div id="logo"><a href="#">MChiq</a></div>
+              <ul>
+                <li><a href="#"> Home</a> </li>
+                <li><a href="#"> Who we are</a> </li>
+                <li><a href="#">Technical support</a> </li>
+                <li><a href="#"> Contact</a> </li>
+                <li><a href="#"> Log In</a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+<!--HOME SECTION
+  ===============================================================-->
+        <div class="main-body">
+            <section class="sec-body">
+
+<!--CAROUSEL SECTION
+  =============================================================-->
+              <div class="slider">
+
+                <figure>
+<!-- first slider -->
+                  <div class="slide">
+                    <h1 class="main-title">
+                      KNOW YOUR POULTRY BEST
+                    </h1>
+                    <p class="main-content">
+                      The recommended site to help startup chicken farmers in Kenya have the right foundation in the poultry industry. <br><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" href="#" class="home-button"> JOIN US.</a>
+                    </p>
+                    <img src="background/chicken3.jpg"/>
+                  </div>
+<!-- second slider -->
+                  <div>
+                    <h1 class="main-title">
+                     What we do
+                    </h1>
+                    <p class="main-content"> Through a number of farm level and community programms we assist our clients develop the best strategies to ensure continued chicken marketting access.  
+                      </p>
+                    <img src="background/chick2.jpg">
+                  </div>
+<!-- third slider -->
+                  <div>
+                    <h1 class="main-title">
+                      WHO WE ARE
+                    </h1>
+                    <p class="main-content">Leading agribusiness service provider offering a wide range of services in the poultry industry.  
+                     </p>
+                    <img src="background/chicken2.jpg">
+                  </div>
+<!-- fourth slider -->
+                  <div>
+                    <h1 class="main-title">
+                      What we do
+                    </h1>
+                    <p class="main-content">We help the farmers bear the challenges of chicken farming.  
+                      </p>
+                    <img src="background/hen-and-chicks.jpg">
+                  </div>
+                
+                </figure>
+              </div>
+
+            </section>
+          </div>
+
+             
+<!--MODAL SECTION
+  ===================================================================-->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <img src="background/egg_icon.ico" alt="Egg avatar" class="avatar">
+    </div>
+<!--
+  ===============-->
+    <div class="container">
+      <p for="uname"><b>Username</b></p>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <p for="num"><b>Phone Number</b></p>
+      <input type="tel" placeholder="Enter Phone Number" name="num" required>
+
+      <p for="email"><b>E-mail</b></p>
+      <input type="email" placeholder="Enter E-mail" name="email" required>
+
+      <p for="psw"><b>Password</b></p>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+<!-- make sure the first password is similar to the second ===========-->
+      <p for="psw"><b>Retype Password</b></p>
+      <input type="password" placeholder="Retype Password" name="psw" required>
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label><br>
+
+      <button type="submit" class="login-button">Sign Up</button>
+
+      
+    </div>
+<!-- =======================-->
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+   <!--      
+=========================================================-->
+            </section> 
+            </div>    
+
+  <!--FORM SECTION
+    ===============================================================-->
+    <form class="comment-form" method="post" action="send_mail.php">
+      <p>
+        <label>First Name
+          <input type="text" name="first_name" required>
+        </label>
+      </p>
+
+      <p>
+        <label>Email
+          <input type="text" name="email-address" required>
+        </label>
+      </p>
+
+      <p>
+        <label>Comments
+          <textarea maxlength="500" name="Comments"></textarea>
+        </label>
+      </p>
+      
+      <p><button>Submit the form</button></p>
+    </form>
+<!---Footer
+=============================================================-->
+  <footer>
+    <div id="footer">
+        <p><a href="#">© 2017 All rights reserved. DANCAN MWANTHI KITUKU </a></p>
+      </div>
+  </footer>
+    </div>
+    <!-- Javascript
+    ====================================================-->
+    <!--script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/animation.js"></script-->
+
+    <!--script type="text/javascript" src="/js/jquery-min.js"></script-->
+
+  </body>
+</html>
